@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    height: 100px;
+    background: lightgreen;
+    border: 1px solid black;
+    clear: both;
+}
+
+section{
+    height: 250px;
+    width: 100%;
+    background: rgb(230, 173, 221);
+    border: 1px solid black;
+}
+article{
+    height: 250px;
+    background: lightblue;
+    border: 1px solid black;
+    float: left;
+}
+article.left{
+    width: 30%;
+}
+article.right{
+    width: 70%;
+}

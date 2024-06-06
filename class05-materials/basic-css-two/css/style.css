@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+li{
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+    background-color: gray;
+}
+section{
+    background: rgb(198, 173, 230);
+    border: 5px solid gold;
+}
+h1{
+    font-size: 30px;
+    color: gold;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    background: brown;
+    height: 300px;
+    width: 70%;
+}
+h2{
+    text-decoration: line-through;
+}

@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    height: 100px;
+    background: lightsalmon;
+    border: 1px solid black;
+    clear: both;
+}
+
+section, article{
+    height: 250px;
+    width: 33.3336%;
+    background: lightblue;
+    border: 1px solid black;
+    float: left;
+}
+article{
+    width: 50%;
+}

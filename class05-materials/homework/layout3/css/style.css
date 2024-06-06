@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    height: 100px;
+    background: lightgreen;
+    border: 1px solid black;
+    clear: both;
+}
+
+section{
+    height: 400px;
+    background: rgb(230, 173, 221);
+    border: 1px solid black;
+    float: left;
+}
+.q2{
+    width: 40%;
+}
+section.q1, .q3, .q4{
+    width: 20%;
+}

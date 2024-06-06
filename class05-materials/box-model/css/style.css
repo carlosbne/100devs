@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.top,.bottom{
+    display: block;
+    height: 100px;
+    background: lightcoral;
+    clear: both;
+}
+
+.box{
+    height: 200px;
+    width: 33.33336%;
+    background:  lightblue;
+    float: left;
+    border: 5px solid yellow;
+}
