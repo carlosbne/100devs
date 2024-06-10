@@ -7,10 +7,15 @@ for(let i = 0; i < movies.length; i++){
 }
 
 //Create an array of numbers. Loop through the array and add three to each number and replace the old number.
-const nums = [10, 20, 30, 40, 50, 60, 70];
+const nums = [10, 20, 30];
 
 
-function troca(x){
+nums.forEach((item, i) =>{
+    nums[i] += 3;
+})
+
+console.log(nums)
+/* function troca(x){
     let cont = 0;
     for(let i = 0; i < x.length; i++){
         x[i] = x[i] + 3;
@@ -21,7 +26,13 @@ function troca(x){
         cont++;
     }
     return x;
-}
+} */
 
-//Find the average of all the numbers from question three
-let conta = 0;
+//Find the average of all the numbers from question two
+let count = 0;
+
+nums.forEach((item, i) =>{
+    count += item;
+})
+count = count / nums.length;
+console.log(count);
