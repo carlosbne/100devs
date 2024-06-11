@@ -1,5 +1,5 @@
 //Create an array of movie titles. Loop through the array and each element to the h2.
-let movies = ['the shining', 'Shrek', 'About Time']
+//const movies = ['the shining', 'Shrek', 'About Time']
 let getH2 = document.querySelector('h2');
 
 for(let i = 0; i < movies.length; i++){
@@ -36,3 +36,5 @@ nums.forEach((item, i) =>{
 })
 count = count / nums.length;
 console.log(count);
+
+
