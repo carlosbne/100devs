@@ -1,0 +1,24 @@
+Object-oriented Programming in JS
+
+---- 4 PILLARS ----
+Encapsulation -> Group properties and Methods into Objects;      -> Reduce complexity + Increase reusability;
+
+Abstraction  -> Hide some properties and methods from the outside. -> Simpler Interface
+             -> Reduce complexity
+             -> Isolate the impact of Change
+
+Inheritance -> Define properties and methods into a generator object and other objects inherit this properties and methods. 
+            -> Helps to eliminate redundancy code.
+
+
+Polymorphism -> Refactor statemants
+
+
+
+==============================================
+Creating Objects
+Factories and Constructors
+Primitives and Reference Types
+Working with properties
+Private properties
+Getting / Setters
