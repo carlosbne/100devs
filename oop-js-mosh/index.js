@@ -59,4 +59,49 @@ if('radius' in circle){
     console.log('Circle has a radius.');
 }
 
-//---------
+//------------ Abstraction ------------------
+// hidde the details and expose only the assential 
+function Circle(radius){
+    this. radius = radius;
+
+    let defaultLocation = { x: 0, y: 0 }; //this is like a private property
+
+    let computeOptimumLocation = function(factor){
+        // ... this is like a private method
+    }
+
+    this.getDefaultLocation = function() {
+        return defaultLocation;
+    }
+
+    this.draw = function(){
+        computeOptimumLocation(0.1); //clousure so this function have acess to a 'private method' of this parent
+
+        console.log('draw');
+    }
+
+    Object.defineProperty(this, 'defaultLocation', { //<- THIS IS A GETTER, read only property; 
+        get: function(){
+            return defaultLocation;
+        },
+        set: function(value){
+            if(!value.x || !value.y)  //<- perform validation before setting the default location
+                throw new Error('Invelid location.')
+
+            defaultLocation = value;
+        }
+    });
+
+
+}
+const circle = new Circle(10);
+circle.getDefaultLocation(); // <- this way we can acess the value of default location like a method;
+
+circle.defaultLocation // <- this way is call a function inside of a object property made in the constructor to read only;
+
+circle.defaultLocation = 1; // <- this way is set a new value to the object propety, return the error;
+
+
+circle.draw();
+
+
