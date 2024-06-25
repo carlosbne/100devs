@@ -10,11 +10,14 @@ alert(sumx);
 //Create a function that takes in an array of numbers
 //Return a new array of numbers that is every original number squared
 function squared(array){
-    let newArr = array.map((element) => Math.pow(element, element));
+    let newArr = array.map((element) => Math.pow(element, 2));
     return newArr;
 }   
 
-console.log(squared(arr));
+//-----leon way-------
+let newArr = nums => nums.map(num => num ** 2);
+
+console.log(newArr(arr));
 
 //Create a function that takes string
 //Print the reverse of that string to the console
@@ -31,8 +34,6 @@ function reversed(str){
         return reversed(str.substring(1)) + str.charAt(0);
     }
 } */
-
-
 
 //Create a function that takes in a string
 //Alert if the string is a palindrome or not
