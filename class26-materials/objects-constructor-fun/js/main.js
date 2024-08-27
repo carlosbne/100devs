@@ -14,5 +14,13 @@ function MakePizza(souce, size, toppings, crust){
     this.frisbee = function(){
         console.log('Weeeeehet')
     }
+    
 }
 
+let Peperoni = new MakePizza('pomodoro', 'large', ['peperoni', 'onions', 'cheese'], 'stuffed')
+console.log(Peperoni)
+console.log(Peperoni.toppings)
+
+MakePizza.prototype.cheese = false
+
+console.log(Peperoni.cheese)
