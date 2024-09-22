@@ -22,5 +22,6 @@ class MakeNetflixTVShow {
         }
     }
 }
+let NetLixo = new MakeNetflixTVShow('couve', 'varios', '2', 'ingles'); 
 
 let NetflixLixo = new MakeNetflixTVShow('Netflix Lixo', 'muitos', '4', 'ingles');   
