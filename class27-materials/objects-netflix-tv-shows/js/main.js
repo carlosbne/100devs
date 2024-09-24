@@ -1,24 +1,24 @@
 //Create a Netflix TV Show class with a constructor that makes Netflix TV Shows with 4 properties and 3 methods
 class MakeNetflixTVShow {
-    constructor(name, epsodios, temporadas, dublagem) {
-        this.name = name;
-        this.epsodios = epsodios;
-        this.temporadas = temporadas;
-        this.dublagem = dublagem;
+    constructor(title, numOfEp, seasons, language) {
+        this.title = title;
+        this.numOfEp = numOfEp;
+        this.seasons = seasons;
+        this.language = language;
     }
 
     playSerie(){
-        console.log(`Wacthingg...${this.name}`);
+        console.log(`Wacthingg...${this.title}`);
     }
-    selectIdiom(dublagem){
-        console.log(`swap ${this.dublagem} for ${dublagem}`);
+    selectIdiom(language){
+        console.log(`swap ${this.language} for ${language}`);
     }
     deleteFinalSeason(){
-        if(this.temporadas > 1){
+        if(this.seasons > 1){
             console.log(`removing the last one`);
-            this.temporadas--;
+            this.seasons--;
         } else {
-            console.log(`is ${this.temporadas} remaing...`);
+            console.log(`is ${this.seasons} remaing...`);
         }
     }
 }
