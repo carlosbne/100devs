@@ -1,18 +1,27 @@
 //Example fetch using DnD5eAPI - place subclasses in ul
 document.querySelector('button').addEventListener('click', getFetch)
 
+
 function getFetch(){
   const ul = document.querySelector('ul');
-  const choice = document.querySelector('input').value.replace(' ', '-')
+  const choice = document.querySelector('input').value.replaceAll(' ', '-')
   const url = `https://www.dnd5eapi.co/api/spells/${choice}/`
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
        console.log(data)
-        if(data.subclasses != 0){
-            var li = document.createElement('li').appendChild(data.subclasses)
-            ul.appendChild(li)
+       const subs = data.subclasses;
+        if(subs != 0){
+            subs.forEach(obj => {
+                console.log(obj.name)
+                //create a li
+                const li = document.createElement('li')
+                //add text to the li
+                li.textContent = obj.name
+                //append the li to dom
+                document.querySelector('ul').appendChild(li)
+            });
         }
       })
       .catch(err => {
