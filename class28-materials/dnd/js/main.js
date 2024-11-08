@@ -5,7 +5,11 @@ document.querySelector('button').addEventListener('click', getFetch)
 function getFetch(){
   const ul = document.querySelector('ul');
   const choice = document.querySelector('input').value.replaceAll(' ', '-')
-  const url = `https://www.dnd5eapi.co/api/spells/${choice}/`
+  const url = `https://www.dnd5eapi.co/api/spells/${choice}/`  
+  const li = document.querySelector('li');
+  if(li){
+    li.remove();
+}
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
