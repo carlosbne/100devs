@@ -9,7 +9,7 @@ function getFetch(){
   const li = document.querySelector('li');
   if(li){
     li.remove();
-}
+  }
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
@@ -26,7 +26,6 @@ function getFetch(){
                 //append the li to dom
                 document.querySelector('ul').appendChild(li)
                 //note finished
-                
             });
         }
       })
